@@ -1,0 +1,231 @@
+body {
+    background-image: url('img/Background-for-all-screen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.startimg {
+    height: auto;
+    width: auto;
+}
+
+body {
+    margin: 0%;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* Desktop View */
+    .startimg {
+        height: 650px;
+    }
+
+    .letsgo {
+        height: 650px;
+        width: 302px;
+        background-image: url('img/Background-for-all-screen.jpg');
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        right: 30%;
+    }
+
+
+    .arrowcallnow {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        margin-left: -22%;
+        margin-top: 1.5%;
+    }
+
+    .videocalltitle {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 27px;
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        bottom: 90%;
+        letter-spacing: 1.01px;
+        line-height: 0.8em;
+        position: absolute;
+        color: white;
+        left: 42%;
+        font-weight: bold;
+    }
+
+    .block {
+        height: 10px;
+        width: 10px;
+        margin-bottom: 20%;
+    }
+
+    .blockbutton {
+        margin-bottom: 20%;
+    }
+
+    .imgcall {
+        height: 200px;
+        width: 200px;
+        border-radius: 500px;
+        /* bottom: 30%; */
+        position: absolute;
+        top: 16%;
+        margin-left: -8%;
+    }
+
+    .img {
+        bottom: 30%;
+        top: -30%;
+        position: relative;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        margin-left: -3%;
+    }
+
+    .imgpin {
+        height: 30px;
+        width: 30px;
+        bottom: 34%;
+        /* margin-top: -10%; */
+        position: absolute;
+        margin-left: -7%;
+    }
+
+    .india {
+        position: absolute;
+        bottom: 31.9%;
+        right: 44.5%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .name {
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        bottom: 40%;
+        font-weight: bold;
+        margin-left: 11.5%;
+    }
+
+    .lottie {
+        background: "transparent";
+        width: 90px;
+        height: 90px;
+        direction: 1;
+        bottom: 13%;
+        position: absolute;
+        margin-left: 46%;
+
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* Mobile View */
+
+    /* .startimg {
+    height: 650px;
+} */
+
+    .letsgo {
+        height: 740px;
+        width: 360px;
+        background-image: url('img/Background-for-all-screen.jpg');
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        right: 30%;
+    }
+
+    .videocalltitle {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        align-items: center;
+        text-align: center;
+        /* margin: 5%; */
+        margin-left: 30%;
+        letter-spacing: 1.01px;
+        line-height: 0.4em;
+        bottom: 94%;
+        color: white;
+        position: absolute;
+        font-weight: bold;
+
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        /* height: auto; */
+        margin-left: -3%;
+    }
+
+
+    .startimg {
+        animation: lift 0.8s ease-in-out;
+        animation-delay: 1.6s;
+        animation-fill-mode: forwards;
+    }
+
+    .arrowcallnow {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        margin-left: -93%;
+        margin-top: 3px;
+    }
+
+    .imgcall {
+        height: 200px;
+        width: 200px;
+        border-radius: 500px;
+        /* bottom: 30%; */
+        position: absolute;
+        top: 8%;
+        margin-left: -27%;
+    }
+
+    .name {
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        bottom: 52%;
+        font-weight: bold;
+        margin-left: 17.5%;
+    }
+
+    .imgpin {
+        height: 30px;
+        width: 30px;
+        bottom: 34%;
+        /* margin-top: -10%; */
+        position: absolute;
+        margin-left: -7%;
+    }
+
+    .india {
+        position: absolute;
+        bottom: 31.9%;
+        right: 44.5%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+}

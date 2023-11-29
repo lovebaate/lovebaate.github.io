@@ -1,0 +1,106 @@
+body {
+    background-image: url('img/Background-for-all-screen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.startimg {
+    height: auto;
+    width: auto;
+}
+
+body {
+    margin: 0%;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ @media only screen and (min-width: 1024px) {
+
+    /* Desktop View */
+    .startimg {
+        height: 650px;
+    }
+
+    .letsgo {
+        height: 650px;
+        width: 302px;
+        background-image: url('img/Background-for-all-screen.jpg');
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        right: 30%;
+    }
+
+    .my-start {
+        height: 40px;
+        width: 175px;
+        position: absolute;
+        bottom: 17%;
+        left: 43.5%;
+        align-items: center;
+        background-color: #e558b8;
+        /* background: linear-gradient(331deg, rgba(2, 0, 36, 1) 0%, rgba(247, 87, 205, 0.5942752100840336) 35%, rgba(5, 141, 250, 1) 100%); */
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        font-family: 'League Spartan', sans-serif;
+        text-decoration: none;
+        border: none;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    /* Mobile View */
+
+    /* .startimg {
+    height: 650px;
+} */
+
+    .letsgo {
+        height: 740px;
+        width: 360px;
+        background-image: url('img/Background-for-all-screen.jpg');
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        right: 30%;
+    }
+
+    .my-start {
+        height: 40px;
+        width: 175px;
+        position: absolute;
+        bottom: 17%;
+        left: 26%;
+        align-items: center;
+        background-color: #e558b8;
+        /* background: linear-gradient(331deg, rgba(2, 0, 36, 1) 0%, rgba(247, 87, 205, 0.5942752100840336) 35%, rgba(5, 141, 250, 1) 100%); */
+        font-size: 21px;
+        padding: 3px;
+        text-align: center;
+        border-radius: 30px;
+        transition: background-color=0.3s;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+
+}
+
+
+

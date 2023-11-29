@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Hype Soln Mu Chat Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Body-type.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <div>
+                        <img src="img/Background-for-all-screen.jpg" class="img img-fluid startimg">
+                        <a href="category.htm">
+                        <img src="img/arrow.png" class="arrowbody">
+                    </a>
+                    </div>
+                    <img src="img/white.jpg" class="backgroundimg">
+                </div>
+                <div class="bodytypetitle">
+                    <p>Which body type</p>
+                    <p>do you prefer</p>
+                </div>
+                <div class="btnslim1">
+                    <button onclick="toggleOpacity()" class="btnslim">Slim
+                        <img id="cornerSign" src="img/selected-category-screens.png" alt="Corner Sign Image"
+                            class="Toggleimg">
+                        <img src="img/antonio.jpg" alt="Your Image" class="imgslim">
+                    </button>
+                </div>
+                <div class="btnAverage2">
+                    <button onclick="toggleOpacity()" class="btnAverage">Average
+                        <img src="img/allef-vinicius.jpg  " alt="Your Image" class="imgAverage">
+                    </button>
+                </div>
+                <div class="btnfit3">
+                    <button onclick="toggleOpacity()" class="btnfit">Fit
+                        <img src="img/alora-gri.jpg" alt="Your Image" class="imgfit">
+                    </button>
+                </div>
+                <div>
+                    <a href="Home-screen.html" class="continuebodytype">Continue</a>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function toggleOpacity() {
+            // Get the image element by its ID
+            var cornerSign = document.getElementById("cornerSign");
+
+            // Toggle the opacity
+            cornerSign.style.opacity = (cornerSign.style.opacity === "0") ? "1" : "0";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
