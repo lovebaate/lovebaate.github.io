@@ -99,6 +99,19 @@ body {
         text-decoration: none;
     }
 
+    .img-fluid {
+        max-width: 106%;
+        height: 100%;
+        margin-left: -3%;
+    }
+
+
+    .startimg {
+        animation: lift 0.8s ease-in-out;
+        animation-delay: 1.6s;
+        animation-fill-mode: forwards;
+    }
+
 
 }
 
