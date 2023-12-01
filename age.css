@@ -249,11 +249,11 @@ body {
         }
 
         .backgroundimg{
-            height: 710px;
+            height: 683px;
             width: 361px;
             margin-left: -4%;
             border-radius: 30px;
-            margin-top: -205%;
+            margin-top: -197%;
             background-size: cover;
             background-position: center;
             align-items: center;
@@ -361,7 +361,7 @@ body {
             display: block;
             justify-content: flex-start;
             left: 4%;
-            margin-top: 7%;
+            margin-top: 5%;
             position: relative;
         }
     
@@ -388,7 +388,7 @@ body {
             height: 40px;
             width: 150px;
             position: absolute;
-            bottom: 9%;
+            bottom: 4%;
             left: 29%;
             align-items: center;
             background-color:  #e558b8;
