@@ -18,43 +18,64 @@
 
             </div>
             <div class="col-md-6">
-                
+
                 <div>
                     <a href="Body-type.html">
                         <img src="img/arrow.png" class="arrowvideo">
                     </a>
-                    
+
                     <img src="img/Background-for-all-screen.jpg" class="img img-fluid startimg">
-                    
+
                 </div>
                 <div class="videocalltitle">
                     <p>Video call</p>
-                    
+
                 </div>
                 <!-- <div class="blockbutton">
                     <img src="img/block.png" class="block">
                     Block
                 </div> -->
             </div>
-            <a href="Call-now-screen.html" class="my-start">Start searching</a>
-        </div>
-            </div>
-
             <div class="col-md-3">
 
             </div>
+            <div class="row" id="imageListSection">
+                
+            </div>
+            <!-- <a href="Call-now-screen.html" class="my-start">Start searching</a> -->
         </div>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="api/dataSource.js">
+
+    </script>
+    <script>
+        showImagesList();
+        function showImagesList() {
+            let imageListHtml = '';
+
+            videoCallData.Data.forEach(element => {
+                if (element.VideoId % 2 != 0) {
+                    imageListHtml += '<div class="row">';
+                }
+                imageListHtml += '<div class="col-lg-6 col-md-6 mb-6 mb-lg-0">';
+                imageListHtml += '<div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">';
+                imageListHtml += '<img src="' + element.ThumbnailUrl + '" class="w-50" />';
+                imageListHtml += '</div></div>'
+                if (element.VideoId % 2 == 0) {
+                    imageListHtml += '</div>';
+                }
+            });
+
+            $("#imageListSection").html(imageListHtml);
+            console.log(imageListHtml);
+        }
+    </script>
 </body>
-
-
 
 </html>
