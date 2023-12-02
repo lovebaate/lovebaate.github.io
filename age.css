@@ -412,7 +412,7 @@ body {
     }
 
     .img-fluid {
-        max-width: 100%;
+        max-width: 150%;
         margin-left: -3%;
     }
 
