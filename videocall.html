@@ -26,11 +26,14 @@
 
                     <img src="img/Background-for-all-screen.jpg" class="img img-fluid startimg">
 
+                    
+
                 </div>
                 <div class="videocalltitle">
                     <p>Video call</p>
 
                 </div>
+                
                 <!-- <div class="blockbutton">
                     <img src="img/block.png" class="block">
                     Block
@@ -61,11 +64,11 @@
 
             videoCallData.Data.forEach(element => {
                 if (element.VideoId % 2 != 0) {
-                    imageListHtml += '<div class="row">';
+                    imageListHtml += '<div class="row">'; 
                 }
                 imageListHtml += '<div class="col-lg-6 col-md-6 mb-6 mb-lg-0">';
                 imageListHtml += '<div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">';
-                imageListHtml += '<img src="' + element.ThumbnailUrl + '" class="w-50" />';
+                imageListHtml += '<a href="Call-now-screen.html?id='+ element.VideoId +'"><div class="grid-wrapper"><img src="' + element.ThumbnailUrl + '" class="apiimg" /></div></a>';
                 imageListHtml += '</div></div>'
                 if (element.VideoId % 2 == 0) {
                     imageListHtml += '</div>';

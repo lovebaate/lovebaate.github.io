@@ -65,7 +65,8 @@ body {
     }
 
     .btndatin {
-        background: linear-gradient(331deg, rgba(2, 0, 36, 1) 0%, rgba(247, 87, 205, 0.5942752100840336) 35%, rgba(5, 141, 250, 1) 100%);
+        background: rgb(2,0,36);
+        background: linear-gradient(319deg, rgba(2,0,36,1) 0%, rgba(5,141,250,1) 0%, rgba(143,110,224,1) 0%, rgba(42,46,241,0.8127626050420168) 0%, rgba(247,87,205,1) 100%);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -82,7 +83,7 @@ body {
 
     .btndatin1 {
         display: block;
-        margin-top: -94%;
+        margin-top: -90%;
         left: 24%;
         position: relative;
     }
@@ -127,7 +128,8 @@ body {
     }
 
     .btnshort {
-        background: linear-gradient(331deg, rgba(2, 0, 36, 1) 0%, rgba(247, 87, 205, 0.5942752100840336) 35%, rgba(5, 141, 250, 1) 100%);
+        background: rgb(2,0,36);
+        background: linear-gradient(319deg, rgba(2,0,36,1) 0%, rgba(5,141,250,1) 0%, rgba(143,110,224,1) 0%, rgba(42,46,241,0.8127626050420168) 0%, rgba(247,87,205,1) 100%);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -154,7 +156,8 @@ body {
     }
 
     .btnlong {
-        background: linear-gradient(331deg, rgba(2, 0, 36, 1) 0%, rgba(247, 87, 205, 0.5942752100840336) 35%, rgba(5, 141, 250, 1) 100%);
+        background: rgb(2,0,36);
+        background: linear-gradient(319deg, rgba(2,0,36,1) 0%, rgba(5,141,250,1) 0%, rgba(143,110,224,1) 0%, rgba(42,46,241,0.8127626050420168) 0%, rgba(247,87,205,1) 100%);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -231,14 +234,14 @@ body {
 
     .categorytitle {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 25px;
+        font-size: 28px;
         align-items: center;
         text-align: center;
         /* margin: 5%; */
-        margin-left: 8.5%;
+        margin-left: 5.5%;
         letter-spacing: 1.01px;
         line-height: 0.4em;
-        bottom: 85%;
+        bottom: 81%;
         color: #000;
         position: absolute;
         font-weight: bold;
@@ -246,11 +249,11 @@ body {
     }
 
     .backgroundimg {
-        height: 700px;
+        height: 683px;
         width: 363px;
         margin-left: -4.4%;
         border-radius: 30px;
-        margin-top: -202%;
+        margin-top: -197%;
         background-size: cover;
         background-position: center;
         align-items: center;
@@ -272,7 +275,8 @@ body {
     }
 
     .btndatin {
-        background: linear-gradient(331deg, rgba(2, 0, 36, 1) 0%, rgba(247, 87, 205, 0.5942752100840336) 35%, rgba(5, 141, 250, 1) 100%);
+        background: rgb(2,0,36);
+        background: linear-gradient(319deg, rgba(2,0,36,1) 0%, rgba(5,141,250,1) 0%, rgba(143,110,224,1) 0%, rgba(42,46,241,0.8127626050420168) 0%, rgba(247,87,205,1) 100%);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -291,7 +295,7 @@ body {
 
     .btndatin1 {
         display: block;
-        margin-top: -185%;
+        margin-top: -170%;
         left: 3%;
         position: relative;
         /* width: 250px; */
@@ -340,7 +344,8 @@ body {
     }
 
     .btnshort {
-        background: linear-gradient(331deg, rgba(2, 0, 36, 1) 0%, rgba(247, 87, 205, 0.5942752100840336) 35%, rgba(5, 141, 250, 1) 100%);
+        background: rgb(2,0,36);
+        background: linear-gradient(319deg, rgba(2,0,36,1) 0%, rgba(5,141,250,1) 0%, rgba(143,110,224,1) 0%, rgba(42,46,241,0.8127626050420168) 0%, rgba(247,87,205,1) 100%);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -375,7 +380,8 @@ body {
     }
 
     .btnlong {
-        background: linear-gradient(331deg, rgba(2, 0, 36, 1) 0%, rgba(247, 87, 205, 0.5942752100840336) 35%, rgba(5, 141, 250, 1) 100%);
+        background: rgb(2,0,36);
+        background: linear-gradient(319deg, rgba(2,0,36,1) 0%, rgba(5,141,250,1) 0%, rgba(143,110,224,1) 0%, rgba(42,46,241,0.8127626050420168) 0%, rgba(247,87,205,1) 100%);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -397,7 +403,7 @@ body {
         height: 40px;
         width: 150px;
         position: absolute;
-        bottom: 9%;
+        bottom: 5%;
         left: 29%;
         align-items: center;
         background-color: #e558b8;
@@ -418,7 +424,7 @@ body {
         width: 40px;
         padding: 5px;
         margin-left: -93%;
-        margin-top: 2px;
+        margin-top: 8px;
     }
 
 
