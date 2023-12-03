@@ -7,6 +7,9 @@
     color: #fff;
     padding: 0.75rem;
 }
+.index img{
+    max-height: 100dvh;
+}
 .btn-index{
     background: rgb(41,47,229);
     border: 0;
