@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url('img/Background-for-all-screen.jpg');
     background-size: cover;
@@ -16,10 +21,7 @@ body {
     text-align: center;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -81,14 +83,24 @@ body {
        grid-auto-rows: 200px;
        grid-auto-flow: dense;
        vertical-align: top;
+      box-sizing: border-box;
+
+
     }
 
     .apiimg{
-        max-width: 100%;
-        height: 100%;
+        max-width: 20%;
+        height: 20%;
         vertical-align: top;
         display: inline-block;
+        margin-top: -40%;  
+        margin-right: 30%;
+        border-radius: 6px;
+        /* margin-bottom: 20%; */
+        position: absolute;
+        /* row-gap: unset; */
         
+     
     }
 
 
@@ -145,8 +157,29 @@ body {
         height: 40px;
         width: 40px;
         padding: 5px;
-        /* margin-left: -93%; */
+        margin-left: -93%;
         margin-top: 3px;
     }
+
+    .grid-wrapper{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
+        grid-auto-rows: 200px;
+        grid-auto-flow: dense;
+        vertical-align: top;
+        box-sizing: border-box;
+        
+
+     }
+ 
+     .apiimg{
+         max-width: 100%;
+         height: 100%;
+         vertical-align: top;
+         display: inline-block;
+         margin-top: -230%;
+         
+     }
 
 }

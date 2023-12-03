@@ -15,7 +15,7 @@ var videoCallData = {
             "Comments": null,
             "Location": null,
             "VideoUrl": "https://printf-app-data.github.io/videos/1.mp4",
-            "ThumbnailUrl": "https://printf-app-data.github.io/images/1.jpg",
+            "ThumbnailUrl": "https://printf-app-data.github.io/images/1.jpg",   
             "Bg1": "https://printf-app-data.github.io/bg1/1.png"
         },
         {

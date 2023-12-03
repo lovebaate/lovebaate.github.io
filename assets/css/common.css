@@ -1,0 +1,64 @@
+/* common fonts */
+@font-face {
+    font-family: 'Spartan MB';
+    src: url('../fonts/SpartanMB-Bold.woff2') format('woff2'),
+        url('../fonts/SpartanMB-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan MB';
+    src: url('../fonts/SpartanMB-Light.woff2') format('woff2'),
+        url('../fonts/SpartanMB-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan MB';
+    src: url('../fonts/SpartanMB-Regular.woff2') format('woff2'),
+        url('../fonts/SpartanMB-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan MB';
+    src: url('../fonts/SpartanMB-Black.woff2') format('woff2'),
+        url('../fonts/SpartanMB-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan MB';
+    src: url('../fonts/SpartanMB-SemiBold.woff2') format('woff2'),
+        url('../fonts/SpartanMB-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan MB';
+    src: url('../fonts/SpartanMB-ExtraBold.woff2') format('woff2'),
+        url('../fonts/SpartanMB-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+body {
+    background: url('../fonts/img/Background-for-all-screen.jpg') no-repeat center / cover;
+    font-family: 'Spartan MB';
+    font-weight: 400;
+}
+
