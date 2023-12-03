@@ -10,7 +10,8 @@
 .index img{
     max-height: 100dvh;
     width: 100vw;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .btn-index{
     background: rgb(41,47,229);

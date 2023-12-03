@@ -6,53 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="age.css">
-
-
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/age.css">
 </head>
 
-<body>
+<body class="age">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-6">
-                <div>
-                    <div>
-                    <img src="img/Background-for-all-screen.jpg" class="img img-fluid startimg">
-                    <a href="index.html">
-                        <img src="img/arrow.png" class="arrowage">
-                    </a>
-                </div>
-                    <img src="img/white.jpg" class="backgroundimg">
-                </div>
-                <div class="agetitle">
-                    <p>Select the age</p>
-                    <p>of your partner
-                    <p>
-                </div>
+        <div class="row justify-content-center flex-fill">
+            <div class="col-md-6 col-lg-3 p-0 d-flex">
+                <div class="bg-primary pt-3 d-flex flex-column">
+                    <header class="px-3 mb-3">
+                        <a href="index.html">
+                            <img src="img/arrow.png" class="img-fluid btn-back" alt="">
+                        </a>
+                    </header>
+                    <main class="pt-5 px-2 d-flex flex-column flex-fill">
+                        <h1 class="h3 mb-5 text-center fw-bold">Select the age<br/>of your partner.</h1>
 
-                <div class="btn">
-                    <button onclick="toggleOpacity()" class="btn18-30">18 - 30
-                        <img id="cornerSign" src="img/selected-category-screens.png" alt="Corner Sign Image"
-                            class="Toggleimg">
-                        <img src="img/corey-saldana.jpg" alt="Your Image" class="img18-30">
-                    </button>
-                </div>
-                <div class="btn2">
-                    <button onclick="toggleOpacity()" class="btn30">30 +
-                        <img src="img/kizkopop.jpg  " alt="Your Image" class="img30">
-                    </button>
-                </div>
-                <div class="btn3">
-                    <button onclick="toggleOpacity()" class="btnnoage">No age limit
-                        <img src="img/tom-morbey.jpg" alt="Your Image" class="imgnoage">
-                    </button>
-                </div>
-                <div>
-                    <a href="category.htm" class="continueage">Continue</a>
-                </div>
-                <div class="col-md-3">
+                        <button onclick="toggleOpacity()" class="align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative">
+                            <h3 class="age-number flex-grow-1">18 - 30</h3>
+                            <img id="cornerSign" src="img/selected-category-screens.png" alt="Corner Sign Image" class="img-tick">
+                            <img src="img/corey-saldana.jpg" alt="Your Image" class="img-fluid img-partner">
+                        </button>
+                        <button onclick="toggleOpacity()" class="align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative">
+                            <h3 class="age-number flex-grow-1">30 +</h3>
+                            <img src="img/kizkopop.jpg  " alt="Your Image" class="img-fluid img-partner">
+                        </button>
+                        <div class="btn3">
+                            <button onclick="toggleOpacity()" class="align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative">
+                                <h3 class="age-number flex-grow-1">No age limit</h3>
+                                <img src="img/tom-morbey.jpg" alt="Your Image" class="img-fluid img-partner">
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn rounded-pill px-5 mb-3">Continue</a>
+                        </div>
+                    </main>
                 </div>
             </div>
         </div>

@@ -54,6 +54,7 @@
 }
 /* font-sizes */
 :root {
+    /* font size */
     --step--2: clamp(0.64rem, 0.8304rem + -0.2457vw, 0.7813rem);
     --step--1: clamp(0.8rem, 0.9853rem + -0.2391vw, 0.9375rem);
     --step-0: clamp(1rem, 1.1685rem + -0.2174vw, 1.125rem);
@@ -62,11 +63,16 @@
     --step-3: clamp(1.9438rem, 1.9405rem + 0.0163vw, 1.9531rem);
     --step-4: clamp(2.3325rem, 2.2947rem + 0.1891vw, 2.4413rem);
     --step-5: clamp(2.7994rem, 2.7115rem + 0.4391vw, 3.0519rem);
+    
+    /* colors */
+    --primary-color: #5F3565;
+    --button-color: #E558B8;
+    --white-color: #fff;
   }
 
 
 body {
-    background: url('../fonts/img/Background-for-all-screen.jpg') no-repeat center / cover;
+    background: url('../../img/bg-common.png') repeat-x center / cover;
     font-family: 'Spartan MB';
     font-weight: 400;
 }
@@ -87,4 +93,23 @@ h5, .h5{
 }
 h6, .h6{
     font-size: var(--step-0);
+}
+/* theme colors */
+.bg-primary{
+    background-color: var(--primary-color) !important;
+}
+
+/* Buttons */
+.btn{
+    background-color: var(--button-color);
+    color: var(--white-color);
+}
+.btn:is(:hover, :focus, :active) {
+    background-color: var(--primary-color);
+    box-shadow: none;
+    color: var(--white-color);
+}
+.btn-back{
+    width: 32px;
+    height: 32px;
 }
