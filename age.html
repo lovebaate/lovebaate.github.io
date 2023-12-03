@@ -23,20 +23,18 @@
                     <main class="pt-5 px-2 d-flex flex-column flex-fill">
                         <h1 class="h3 mb-5 text-center fw-bold">Select the age<br/>of your partner.</h1>
 
-                        <button onclick="toggleOpacity()" class="align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative">
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative" role="button">
                             <h3 class="age-number flex-grow-1">18 - 30</h3>
-                            <img id="cornerSign" src="img/selected-category-screens.png" alt="Corner Sign Image" class="img-tick">
+                            <!-- <img id="cornerSign" src="img/selected-category-screens.png" alt="Corner Sign Image" class="img-tick"> -->
                             <img src="img/corey-saldana.jpg" alt="Your Image" class="img-fluid img-partner">
-                        </button>
-                        <button onclick="toggleOpacity()" class="align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative">
+                        </div>
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative" role="button">
                             <h3 class="age-number flex-grow-1">30 +</h3>
                             <img src="img/kizkopop.jpg  " alt="Your Image" class="img-fluid img-partner">
-                        </button>
-                        <div class="btn3">
-                            <button onclick="toggleOpacity()" class="align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative">
-                                <h3 class="age-number flex-grow-1">No age limit</h3>
-                                <img src="img/tom-morbey.jpg" alt="Your Image" class="img-fluid img-partner">
-                            </button>
+                        </div>
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative" role="button">
+                            <h3 class="age-number flex-grow-1">No age limit</h3>
+                            <img src="img/tom-morbey.jpg" alt="Your Image" class="img-fluid img-partner">
                         </div>
                         <div class="text-center">
                             <a href="#" class="btn rounded-pill px-5 mb-3">Continue</a>
@@ -52,13 +50,13 @@
         <!-- <button onclick="toggleOpacity()">Toggle Opacity</button> -->
 
         <script>
-            function toggleOpacity() {
-                // Get the image element by its ID
-                var cornerSign = document.getElementById("cornerSign");
-
-                // Toggle the opacity
-                cornerSign.style.opacity = (cornerSign.style.opacity === "0") ? "1" : "0";
-            }
+            const tick = document.querySelectorAll('.age-card');
+            tick.forEach( (t) => {
+                t.addEventListener("click", function(){
+                    $(tick).removeClass('active');
+                    this.classList.add("active");
+                });
+            })
         </script>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"

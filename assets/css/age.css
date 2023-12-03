@@ -9,24 +9,28 @@
     border-top-left-radius: 3.25rem;
 }
 
-button.d-flex {
+.age-card {
     background: linear-gradient(135deg,  #e558b8 0%,#e558b8 29%,#292fe5 70%,#292fe5 100%);
     border: 0;
     color: var(--white-color);
+    text-align: center;
 }
-
-button.d-flex .img-partner{
-    max-width: 34%;
-    aspect-ratio: 1/1;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 70px 0 0 18px;
-}
-.img-tick{
-    max-width: 16px;
+.age-card.active::before{
+    content: "";
+    background: url('../../img/selected-category-screens.png')no-repeat center / contain;
+    width: 16px;
+    height: 16px;
     position: absolute;
     top: 0.5rem;
     right: auto;
     bottom: auto;
     left: 0.5rem;
+}
+
+.age-card .img-partner{
+    max-width: 34%;
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 70px 0 0 18px;
 }
