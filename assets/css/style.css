@@ -1,0 +1,19 @@
+.index .intro-text{
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 0.75rem;
+}
+.index img{
+    max-height: 100dvh;
+}
+.btn-index{
+    background: rgb(41,47,229);
+    border: 0;
+    background: linear-gradient(135deg,  #e558b8 0%,#e558b8 29%,#292fe5 70%,#292fe5 100%);
+    color: #fff;
+    font-size: 22px;
+}
