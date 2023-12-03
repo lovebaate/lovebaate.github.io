@@ -21,18 +21,21 @@
                         </a>
                     </header>
                     <main class="pt-5 px-2 d-flex flex-column flex-fill">
-                        <h1 class="h3 mb-5 text-center fw-bold">Select the age<br/>of your partner.</h1>
+                        <h1 class="h3 mb-5 text-center fw-bold">Select the age<br />of your partner.</h1>
 
-                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative" role="button">
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative"
+                            role="button">
                             <h3 class="age-number flex-grow-1">18 - 30</h3>
                             <!-- <img id="cornerSign" src="img/selected-category-screens.png" alt="Corner Sign Image" class="img-tick"> -->
                             <img src="img/corey-saldana.jpg" alt="Your Image" class="img-fluid img-partner">
                         </div>
-                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative" role="button">
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative"
+                            role="button">
                             <h3 class="age-number flex-grow-1">30 +</h3>
                             <img src="img/kizkopop.jpg  " alt="Your Image" class="img-fluid img-partner">
                         </div>
-                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative" role="button">
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative"
+                            role="button">
                             <h3 class="age-number flex-grow-1">No age limit</h3>
                             <img src="img/tom-morbey.jpg" alt="Your Image" class="img-fluid img-partner">
                         </div>
@@ -44,26 +47,18 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-
-
-        <!-- <button onclick="toggleOpacity()">Toggle Opacity</button> -->
-
-        <script>
-            const tick = document.querySelectorAll('.age-card');
-            tick.forEach( (t) => {
-                t.addEventListener("click", function(){
-                    $(tick).removeClass('active');
-                    this.classList.add("active");
-                });
-            })
-        </script>
-
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
+    <script>
+        const tick = document.querySelectorAll('.age-card');
+        tick.forEach((t) => {
+            t.addEventListener("click", function () {
+                $(tick).removeClass('active');
+                this.classList.add("active");
+            });
+        })
+    </script>
 </body>
 
 </html>

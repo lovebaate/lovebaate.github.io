@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Hype Soln Mu Chat Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/user-list.css">
+</head>
+
+<body class="user-list">
+    <div class="container">
+        <div class="row justify-content-center flex-fill">
+            <div class="col-md-6 col-lg-3 p-0 d-flex">
+                <div class="bg-primary pt-3 d-flex flex-column">
+                    <header class="px-3 mb-3 position-relative">
+                        <a href="index.html">
+                            <img src="img/arrow.png" class="img-fluid btn-back" alt="">
+                        </a>
+                        <h4 class="align-middle d-inline-block h5 mb-0 text-white ms-3 fw-semibold">Video call</h4>
+                        <div class="actions">
+                            <a href="#" class="actions-btn">
+                                <img src="./img/block.png" alt="" class="img-fluid">
+                                <div class="small">Block</div>
+                            </a>
+                            <a href="#" class="actions-btn">
+                                <img src="./img/report.png" alt="" class="img-fluid">
+                                <div class="small">Report</div>
+                            </a>
+                        </div>
+                    </header>
+                    <main class="px-2 d-flex flex-column flex-fill">
+                        <div class="container" id="imageListSection"></div>
+                        <!-- <a href="Call-now-screen.html" class="my-start">Start searching</a> -->
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="api/dataSource.js">
+
+    </script>
+    <script>
+        showImagesList();
+        function showImagesList() {
+            let imageListHtml = '';
+
+            videoCallData.Data.forEach(element => {
+                if (element.VideoId % 2 != 0) {
+                    imageListHtml += '<div class="row">'; 
+                }
+                imageListHtml += '<div class="col-6">';
+                imageListHtml += '<a class="position-relative d-block mb-3" href="Call-now-screen.html?id='+ element.VideoId +'"><img src="' + element.ThumbnailUrl + '" class="img-fluid rounded-4" /><h5 class="user-name">'+element.FirstName+'</h5><div class="age-gender"><div class="gender"><img src="./img/female-symbol.png" /></div><div class="age">'+element.VideoId+'</div></div></a>';
+                imageListHtml += '</div>'
+                if (element.VideoId % 2 == 0) {
+                    imageListHtml += '</div>';
+                }
+            });
+
+            $("#imageListSection").html(imageListHtml);
+            console.log(imageListHtml);
+        }
+    </script>
+</body>
+
+</html>
