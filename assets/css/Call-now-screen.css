@@ -1,0 +1,68 @@
+.call-now.container{
+    min-height: 100dvh;
+    display: flex;
+    flex-flow: wrap;
+}
+.call-now main{
+    max-height: 100dvh;
+    overflow-y: auto;
+}
+.user-name{
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: var(--white-color);
+}
+.age-gender{
+    background: linear-gradient(135deg, #e558b8 0%,#e558b8 29%,#292fe5 70%,#292fe5 100%);
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: auto;
+    left: auto;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    gap: 5px;
+}
+.age-gender .gender img{
+    max-width: 10px;
+}
+.age-gender .age{
+    color: var(--white-color);
+    font-size: 10px;
+}
+
+.call-now .img-partner{
+    max-width: 70%;
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    /* margin:auto; */
+    
+}
+
+.age-card {
+    /* background: linear-gradient(135deg,  #e558b8 0%,#e558b8 29%,#292fe5 70%,#292fe5 100%); */
+    border: 0;
+    color: var(--white-color);
+    text-align: center;
+}
+.call-now .img-pin{
+    max-width: 10%;
+    aspect-ratio: 1/1;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-left: 16%;
+    
+}
+
+.lottie{
+    width: 40%;
+    margin-left: 30%;
+}

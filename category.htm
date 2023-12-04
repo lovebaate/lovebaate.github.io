@@ -6,74 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="category.css">
-
-
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/category.css">
 </head>
 
-<body>
+<body class="age">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-6">
-                <div>
-                    <div>
-                    <img src="img/Background-for-all-screen.jpg" class="img img-fluid startimg">
-                    <a href="age.html">
-                        <img src="img/arrow.png" class="arrowcategory">
-                    </a>
-                </div>
-                    <img src="img/white.jpg" class="backgroundimg">
-                </div>
-                <div class="categorytitle">
-                    <p>What kind of relation</p>
-                    <p>are you looking for ?</p>
-                </div>
+        <div class="row justify-content-center flex-fill">
+            <div class="col-md-6 col-lg-3 p-0 d-flex">
+                <div class="bg-primary pt-3 d-flex flex-column">
+                    <header class="px-3 mb-3">
+                        <a href="age.html">
+                            <img src="img/arrow.png" class="img-fluid btn-back" alt="">
+                        </a>
+                    </header>
+                    <main class="pt-5 px-2 d-flex flex-column flex-fill">
+                        <h1 class="h3 mb-5 text-center fw-bold">What kind of relation are you looking for ?</h1>
 
-                <div class="btndatin1">
-                    <button onclick="toggleOpacity()" class="btndatin">Dating
-                        <img id="cornerSign" src="img/selected-category-screens.png" alt="Corner Sign Image"
-                            class="Toggleimg">
-                        <img src="img/pipe-gil.jpg" alt="Your Image" class="imgdating">
-                    </button>
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative"
+                            role="button">
+                            <h3 class="age-number flex-grow-1">Dating</h3>
+                            <!-- <img id="cornerSign" src="img/selected-category-screens.png" alt="Corner Sign Image" class="img-tick"> -->
+                            <img src="img/pipe-gil.jpg" alt="Your Image" class="img-fluid img-partner">
+                        </div>
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative"
+                            role="button">
+                            <h3 class="age-number flex-grow-1">Short relation</h3>
+                            <img src="img/damian-barczak.jpg" alt="Your Image" class="img-fluid img-partner">
+                        </div>
+                        <div class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4 overflow-hidden mb-4 position-relative"
+                            role="button">
+                            <h3 class="age-number flex-grow-1">Long relation</h3>
+                            <img src="img/kevin-hellhake.jpg" alt="Your Image" class="img-fluid img-partner">
+                        </div>
+                        <div class="text-center">
+                            <a href="Body-type.html" class="btn rounded-pill px-5 mb-3">Continue</a>
+                        </div>
+                    </main>
                 </div>
-                    <div class="btnshort2">
-                        <button onclick="toggleOpacity()" class="btnshort">Short relation
-                            <img src="img/damian-barczak.jpg  " alt="Your Image" class="imgshort">
-                        </button>
-                    </div>
-                    <div class="btnlong3">
-                        <button onclick="toggleOpacity()" class="btnlong">Long relation
-                            <img src="img/kevin-hellhake.jpg" alt="Your Image" class="imglong">
-                        </button>
-                    </div>
-                    <div>
-                        <a href="Body-type.html" class="continuecategory">Continue</a>
-                    </div>
-                    <div class="col-md-3">
-                    </div>
             </div>
         </div>
     </div>
-
-
-
-    <script>
-        function toggleOpacity() {
-            // Get the image element by its ID
-            var cornerSign = document.getElementById("cornerSign");
-
-            // Toggle the opacity
-            cornerSign.style.opacity = (cornerSign.style.opacity === "0") ? "1" : "0";
-        }
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+
+    <script>
+        const tick = document.querySelectorAll('.age-card');
+        tick.forEach((t) => {
+            t.addEventListener("click", function () {
+                $(tick).removeClass('active');
+                this.classList.add("active");
+            });
+        })
+    </script>
 </body>
 
 </html>
