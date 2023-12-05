@@ -18,8 +18,8 @@
         <div class="row justify-content-center flex-fill">
             <div class="col-md-6 col-lg-3 p-0">
                 <div class="bg-primary pt-3 d-flex flex-column">
-                    <header class="px-3 mb-3 position-relative ">
-                        <a href="Call-now-screen.html">
+                    <header class="px-3 mb-0 position-relative ">
+                        <a href="#" id="btnCallNow">
                             <img src="img/arrow.png" class="img-fluid btn-back" alt="">
                         </a>
                         <div class="actions ">
@@ -32,29 +32,12 @@
                                 <div class="small">Report</div>
                             </a>
                         </div>
-                        <video autoplay muted loop class="video">
-                            <source src="Video 02.mp4" type="video/mp4" class="video" id="uservideo">
-                            <video id="camera" width="640" height="480" autoplay></video>
-                        </video>
+                       
                     </header>
                     <main class="px-2 d-flex flex-column flex-fill">
-
-                        <!-- <div class="age-card align-items-center border-0  px-0 s overflow-hidden mb-lg-0">
-                            <img src="./img/corey-saldana.jpg" id="userImage" alt="User image"
-                                class="img-fluid img-partner mt-5">
-                            <h3 class="age-number  mt-5 text-center fw-bold" id="username">Judy Martin</h3>
-                            <div
-                                class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4  mt-5 position-relative gap-2">
-                                <img src="./img/pin-resized.png" alt="" class="img-fluid img-pin">
-                                <h5 class="age-number  mt-2 text-center fw-bold ">mumbai,india</h3>
-                            </div>
-                            <a href="video.html">
-                                <lottie-player src="img/call.json" class="lottie mt-5 flex-xxl-fill" loop
-                                    autoplay></lottie-player>
-                            </a>
-                        </div> -->
-
-
+                         <video autoplay muted loop class="video mt-2" id="userVideo">
+                            
+                        </video>
                     </main>
                 </div>
             </div>
@@ -73,25 +56,15 @@
     <script src="api/dataSource.js"></script>
     <script>
         let id = getUrlParameter("id");
+        $("#btnCallNow").attr("href", "Call-now-screen.html?id=" + id);
+
         videoCallData.Data.forEach(element => {
             if (element.VideoId == id) {
-                $('uservideo').video(element.VideoUrl);
+                $("#userVideo").attr('src', element.VideoUrl);
+                $('#username').text(element.FirstName);
                 return;
             }
         });
-
-    </script>
-    <script>
-        // Get user media (camera) and display it in the video element
-        navigator.mediaDevices.getUserMedia({ video: true })
-            .then(function (stream) {
-                // Assign the camera stream to the video element
-                var video = document.getElementById('camera');
-                video.srcObject = stream;
-            })
-            .catch(function (error) {
-                console.error('Error accessing the camera: ', error);
-            });
     </script>
 
 

@@ -43,7 +43,7 @@
                                 <img src="./img/pin-resized.png" alt="" class="img-fluid img-pin">
                                 <h5 class="age-number  mt-2 text-center fw-bold ">mumbai,india</h3>
                             </div>
-                            <a href="video.html">
+                            <a id="btnCallNow" href="#">
                                 <lottie-player src="img/call.json" class="lottie mt-5 flex-xxl-fill" loop
                                     autoplay></lottie-player>
                             </a>
@@ -56,9 +56,6 @@
         </div>
     </div>
 
-
-
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -68,6 +65,8 @@
     <script src="api/dataSource.js"></script>
     <script>
         let id = getUrlParameter("id");
+        $("#btnCallNow").attr("href", "video.html?id=" + id);
+        
         videoCallData.Data.forEach(element => {
             if (element.VideoId == id) {
                 $("#userImage").attr('src', element.ThumbnailUrl);
@@ -75,32 +74,7 @@
                 return;
             }
         });
-
     </script>
-        <!-- <script>
-            showImagesList();
-            function showImagesList() {
-                let imageListHtml = ''; 
-    
-                videoCallData.Data.forEach(element => {
-                    if (element.VideoId % 2 != 0) {
-                        imageListHtml += '<div class="row">';
-                    }
-                    imageListHtml += '<div class="col-6">';
-                    imageListHtml += '<a class="position-relative d-block mb-3z" href="video.html?id=' + element.VideoId + '"><lottie-player src="img/call.json" class="lottie mt-5 flex-xxl-fill" loop autoplay></lottie-player></a>';
-                    imageListHtml += '</div>'
-                    if (element.VideoId % 2 == 0) {
-                        imageListHtml += '</div>';
-                    }
-                });
-    
-                $("#imageListSection").html(imageListHtml);
-                console.log(imageListHtml);
-            }
-        </script> -->
-
-
-
 </body>
 
 
