@@ -35,15 +35,18 @@
                     </header>
                     <main class="px-2 d-flex flex-column flex-fill">
                         <div class="age-card align-items-center border-0  px-0 s overflow-hidden mb-lg-0">
-                            <img src="./img/corey-saldana.jpg" id="userImage" alt="User image" class="img-fluid img-partner mt-5">
+                            <img src="./img/corey-saldana.jpg" id="userImage" alt="User image"
+                                class="img-fluid img-partner mt-5">
                             <h3 class="age-number  mt-5 text-center fw-bold" id="username">Judy Martin</h3>
                             <div
                                 class="age-card align-items-center border-0 d-flex flex-row px-0 rounded-4  mt-5 position-relative gap-2">
                                 <img src="./img/pin-resized.png" alt="" class="img-fluid img-pin">
                                 <h5 class="age-number  mt-2 text-center fw-bold ">mumbai,india</h3>
                             </div>
-                            <lottie-player src="img/call.json" class="lottie mt-5 flex-xxl-fill" loop
-                                autoplay></lottie-player>
+                            <a href="video.html">
+                                <lottie-player src="img/call.json" class="lottie mt-5 flex-xxl-fill" loop
+                                    autoplay></lottie-player>
+                            </a>
                         </div>
 
 
@@ -74,8 +77,29 @@
         });
 
     </script>
+        <!-- <script>
+            showImagesList();
+            function showImagesList() {
+                let imageListHtml = ''; 
+    
+                videoCallData.Data.forEach(element => {
+                    if (element.VideoId % 2 != 0) {
+                        imageListHtml += '<div class="row">';
+                    }
+                    imageListHtml += '<div class="col-6">';
+                    imageListHtml += '<a class="position-relative d-block mb-3z" href="video.html?id=' + element.VideoId + '"><lottie-player src="img/call.json" class="lottie mt-5 flex-xxl-fill" loop autoplay></lottie-player></a>';
+                    imageListHtml += '</div>'
+                    if (element.VideoId % 2 == 0) {
+                        imageListHtml += '</div>';
+                    }
+                });
+    
+                $("#imageListSection").html(imageListHtml);
+                console.log(imageListHtml);
+            }
+        </script> -->
 
-   
+
 
 </body>
 

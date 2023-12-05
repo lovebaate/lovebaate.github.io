@@ -1,0 +1,7 @@
+.video{
+    height: 100vh;
+    width: 20vw;
+    /* margin-bottom: 20%; */
+    object-fit: cover;
+    display: block;
+}
