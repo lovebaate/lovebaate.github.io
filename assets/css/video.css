@@ -80,15 +80,30 @@
     height: 15%;
     width: 15%;
     position: relative;
-    margin-left: 40px;
+    margin-left: 10%;
     margin-top: -25%;
 }
-.call{
-    height: 20%;
-    width: 20%;
+.callbtn{
+    /* height: 20%; */
+    max-width: 21%;
     position: absolute;
-    margin-left: 40px;
-    margin-top: -20%;
+    /* margin-left: 5%; */
+    margin-top: -1%;
+}
+.call{
+    height: 15%;
+    width: 15%;
+    position: relative;
+    /* margin-left: 15%; */
+    margin-top: -25%;
+}
+.camerabtn{
+    height: 15%;
+    width: 15%;
+    position: relative;
+    margin-left: 50%;
+    margin-top: -25%;
+
 }
 .camera{
     height: 20%;
@@ -116,7 +131,7 @@
         height: 15%;
         width: 15%;
         position: relative;
-        margin-left: 56px;
+        margin-left: 10%;
         margin-top: -25%;
     }
     .camera{
@@ -130,6 +145,20 @@
         margin-top: -75%;
         color: #ffff;
     
+    }
+    .callbtn{
+        /* height: 20%; */
+        width: 50%;
+        position: absolute;
+        margin-left: 40%;
+        margin-top: -25%;
+    }
+    .call{
+        height: 90%;
+        width: 90%;
+        position: relative;
+        /* margin-left: 50%; */
+        /* margin-top: -25%; */
     }
     
 
