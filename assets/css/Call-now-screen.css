@@ -48,7 +48,6 @@
 }
 
 .age-card {
-    /* background: linear-gradient(135deg,  #e558b8 0%,#e558b8 29%,#292fe5 70%,#292fe5 100%); */
     border: 0;
     color: var(--white-color);
     text-align: center;
